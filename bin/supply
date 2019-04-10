@@ -54,8 +54,9 @@ cx_config=$3/$4/config.yml
 touch $cx_config
 echo "---" > $cx_config
 echo "name: CxIAST" >> $cx_config
-echo "additional_libraries:" >> $cx_config
-echo "- $3/$4/cxiast-java-agent/cx-launcher.jar" >> $cx_config
+echo "config: "
+echo "  additional_libraries:" >> $cx_config
+echo "  - $3/$4/cxiast-java-agent/cx-launcher.jar" >> $cx_config
 #echo "- $3/$4/cxiast-java-agent" >> $cx_config
 #echo "java_opts.javaagents:" >> $cx_config
 #echo "- $3/$4/cxiast-java-agent/cx-launcher.jar" >> $cx_config
