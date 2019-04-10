@@ -6,6 +6,6 @@ ehco "environment:"
 echo $(env)
 echo $(whoami)
 echo $(0)
-echo ()
+echo
 
 exit 1
