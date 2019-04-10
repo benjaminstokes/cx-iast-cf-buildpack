@@ -24,6 +24,7 @@ echo $(which unzip)
 
 echo "unzipping agent"
 unzip $3/$4/cxiast-java-agent.zip -d $3/$4/cxiast-java-agent
+chmod -R 744 $3/$4
 
 echo "listing $3 contents"
 ls -alR $3
