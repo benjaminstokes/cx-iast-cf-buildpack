@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+BP=$(dirname "$(dirname $0)")
+echo "Checkmarx IAST buildpack detect"
+ehco "environment:"
+echo $(env)
+echo $(whoami)
+echo $(0)
+echo ()
+
+exit 1
