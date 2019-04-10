@@ -62,7 +62,7 @@ cxappname=$(jq -r -n "$VCAP_APPLICATION | .space_name + \":\" + .application_nam
 cxscantag=1
 cxteam=CxServer
 
-cx_config=$3/$4/config.yml
+cx_config=$3/$4/config1.yml
 touch $cx_config
 echo "---" > $cx_config
 echo "name: CxIAST" >> $cx_config
