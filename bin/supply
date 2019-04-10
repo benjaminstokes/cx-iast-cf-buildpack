@@ -2,11 +2,18 @@
 
 
 BP=$(dirname "$(dirname $0)")
+echo "*****************"
 echo "CX IAST SUPPLY"
-echo "ENVIRONMENT: $(env)"
-echo "WHOAMI: $(whoami)"
+echo "*****************"
 echo "ARGUMENTS: $@"
 echo "PWD: $(pwd)"
+echo "WHOAMI: $(whoami)"
+
+echo "-"
+echo "-"
+echo "ENVIRONMENT: $(env)"
+echo "-"
+echo "-"
 
 
 exit 0
