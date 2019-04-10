@@ -28,6 +28,17 @@ chmod -R 744 $3/$4
 
 echo "listing $3 contents"
 ls -alR $3
+echo ""
+
+echo "cx_agent.properties: "
+cat $3/$4/cxiast-java-agent/cx_agent.properties
+echo ""
+echo ""
+echo "cx_agent.override.properties:" 
+cat $3/$4/cxiast-java-agent/cx_agent.override.properties
+echo ""
+echo ""
+
 
 echo "-"
 echo "-"
@@ -58,6 +69,7 @@ echo "name: CxIAST" >> $cx_config
 echo "config: " >> $cx_config
 echo "  additional_libraries:" >> $cx_config
 echo "    - $3/$4/cxiast-java-agent/cx-launcher.jar" >> $cx_config
+echo "    - $3/$4/cxiast-java-agent/" >> $cx_config
 
 echo "  java_opts:" >> $cx_config
 echo "    javaagents:" >> $cx_config
@@ -65,6 +77,10 @@ echo "      - $3/$4/cxiast-java-agent/cx-launcher.jar" >> $cx_config
 
 echo "    preformatted_options:" >> $cx_config
 echo "      - \"-Diast.home='$3/$4/cx-iast-java-agent' -Xverify:none -DcxAppTag='$cxappname' -DcxScanTag='$cxscantag' -DcxTeam='$cxteam'\"" >> $cx_config
+
+
+
+
 
 ls -alR $3/$4
 
