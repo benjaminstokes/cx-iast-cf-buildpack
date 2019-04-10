@@ -2,11 +2,14 @@
 
 
 BP=$(dirname "$(dirname $0)")
-echo "Checkmarx IAST buildpack finalize"
-echo "environment:"
+echo "Checkmarx IAST buildpack supply"
+echo "ENVIRONMENT:"
 echo $(env)
+echo "WHOAMI:"
 echo $(whoami)
-echo $(0)
-echo
+echo "ARGUMENTS:"
+echo $@
+echo "PWD:"
+echo $(pwd)
 
 exit 0
