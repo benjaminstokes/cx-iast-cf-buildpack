@@ -6,8 +6,27 @@ echo "*****************"
 echo "CX IAST SUPPLY"
 echo "*****************"
 echo "ARGUMENTS: $@"
+echo "1: $1"
+echo "2: $2"
+echo "3: $3"
+echo "4: $4"
 echo "PWD: $(pwd)"
 echo "WHOAMI: $(whoami)"
+
+echo "whiching curl"
+echo $(which curl)
+
+echo "downloading java agent"
+curl http://iast30.cx.sekots.org:8380/iast/compilation/download/JAVA --output $3/$4/cxiast-java-agent.zip
+
+echo "whiching unzip"
+echo $(which unzip)
+
+echo "unzipping agent"
+unzip $3/$4/cxiast-java-agent.zip -d $3/$4/cxiast-java-agent
+
+echo "listing $3 contents"
+ls -alR $3
 
 echo "-"
 echo "-"
