@@ -53,8 +53,8 @@ cxteam=CxServer
 cx_config=$3/$4/config.yml
 touch $cx_config
 echo "---" > $cx_config
-echo "additional_libraries:" >> $cx_config
-echo "- $3/$4/cxiast-java-agent" >> $cx_config
+echo "additional_libraries: $3/$4/cxiast-java-agent" >> $cx_config
+#echo "- $3/$4/cxiast-java-agent" >> $cx_config
 #echo "java_opts.javaagents:" >> $cx_config
 #echo "- $3/$4/cxiast-java-agent/cx-launcher.jar" >> $cx_config
 #echo "java_opts.preformatted_options: [\"-Diast.home='$3/$4/cx-iast-java-agent' -Xverify:none -DcxAppTag='$cxappname' -DcxScanTag='$cxscantag' -DcxTeam='$cxteam'\"]" >> $cx_config
