@@ -72,7 +72,7 @@ echo "  additional_libraries:" >> $cx_config
 #echo "    - $3/$4/cxiast-java-agent/" >> $cx_config
 #echo "    - $3/$4/cxiast-java-agent/cx-agent.jar" >> $cx_config
 echo "    - $3/$4/cxiast-java-agent/cx_agent.properties" >> $cx_config
-echo "    - $3/$4/cxiast-java-agent/cx_agent.override.properties" >> $cx_config
+#echo "    - $3/$4/cxiast-java-agent/cx_agent.override.properties" >> $cx_config
 
 #echo "  java_opts:" >> $cx_config
 #echo "    javaagents:" >> $cx_config
